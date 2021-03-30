@@ -6,7 +6,7 @@ from config import BOT_NAME as bn, DURATION_LIMIT
 from helpers.errors import DurationLimitError
 
 ydl_opts = {
-    "format": "bestaudio/best",
+    "format": "worstaudio/worst",
     "geo-bypass": True,
     "nocheckcertificate": True,
     "outtmpl": "downloads/%(id)s.%(ext)s",
