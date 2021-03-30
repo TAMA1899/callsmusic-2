@@ -19,7 +19,7 @@ async def a(client, message: Message):
         query += ' ' + str(i)
     print(query)
     m = await message.reply(f"**{Bn} :-** 🔍 Searching for {query}")
-    ydl_opts = {"format": "bestaudio[ext=m4a]"}
+    ydl_opts = {"format": "bestaudio[ext=webm]"}
     try:
         results = []
         count = 0
