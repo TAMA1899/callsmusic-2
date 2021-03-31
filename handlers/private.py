@@ -8,23 +8,24 @@ from helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""I am **{bn}** !!
-I let you play music in your group's voice chat 😉
-The commands I currently support are:
-⚜️ /play - __Plays the replied audio file or YouTube video through link.__
-⚜️ /pause - __Pause Voice Chat Music.__
-⚜️ /resume - __Resume Voice Chat Music.__
-⚜️ /skip - __Skips the current Music Playing In Voice Chat.__
-⚜️ /stop - __Clears The Queue as well as ends Voice Chat Music.__
+        f"""❌❌❌❌SELAMAT DATANG DI ROBOT MUSIC!❌❌❌❌
+
+SAYA AKAN MEMBANTU MEMUTAR MUSIC DI VOICE CHAT GRUB ANDA. 
+PERINTAH YANG DAPAT ANDA GUNAKAN :
+🎬 /play - __untuk memutar dari audio file atau YouTube link.__
+🎬 /pause - __Menghentikan Voice Chat Music.__
+🎬 /resume - __Melanjutkan Voice Chat Music.__
+🎬 /skip - __untuk melanjutkan Music selanjutnya In Voice Chat.__
+🎬 /stop - __menghentikan Voice Chat Music.__
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Group 💬", url="https://t.me/hellbot_official_chat"
+                        "Group 💬", url="https://t.me/joinchat/jhjQySLPqmBjMGZl"
                     ),
                     InlineKeyboardButton(
-                        "Channel 📣", url="https://t.me/hellbot_official"
+                        "Channel 📣", url="https://t.me/pejuangairdrops"
                     )
                 ]
             ]
