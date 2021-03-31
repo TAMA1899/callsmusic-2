@@ -19,7 +19,7 @@ async def pause(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'paused'
     ):
-        await message.reply_text(f"⛔ KAMU NGAPAIN SAYANG!")
+        await message.reply_text(f"⛔ KAMU MAU NGAPAIN SAYANG!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
         await message.reply_text(f"▶️ MUSIK DIHENTIKAN SEMENTARA!")
@@ -34,7 +34,7 @@ async def resume(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'playing'
     ):
-        await message.reply_text(f"⛔ KAMU NGAPAIN SAYANG!")
+        await message.reply_text(f"⛔ KAMU MAU NGAPAIN SAYANG!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
         await message.reply_text(f"⏸️ MUSIC DILANJUTKAN")
